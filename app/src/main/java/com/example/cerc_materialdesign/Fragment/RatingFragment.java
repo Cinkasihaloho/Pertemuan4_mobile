@@ -30,6 +30,7 @@ public class RatingFragment extends Fragment {
                 String rating = "Rating yang anda berikan adalah " + ratingBar.getRating() + "\nTerima kasih telah memberikan review pada mentor kami.";
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 getActivity().startActivity(intent);
+                
                 Toast.makeText(getActivity(), rating, Toast.LENGTH_SHORT).show();
             }
         });

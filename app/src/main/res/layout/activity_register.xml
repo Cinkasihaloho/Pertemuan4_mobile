@@ -204,7 +204,7 @@ dan perlindungan privasi pada aplikasi CERC 2020"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.925">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
@@ -212,7 +212,7 @@ dan perlindungan privasi pada aplikasi CERC 2020"
             android:textColor="@color/colorDefault"
             android:textSize="16sp" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

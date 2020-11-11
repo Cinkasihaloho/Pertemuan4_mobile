@@ -128,15 +128,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.9">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="Belum punya akun?"
+                android:text="@string/belum_punya_akun"
                 android:textColor="@color/colorDefault"
                 android:textSize="16sp" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tv_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,6 +148,8 @@
                 android:textSize="16sp" />
 
         </LinearLayout>
+
+
 
 
 

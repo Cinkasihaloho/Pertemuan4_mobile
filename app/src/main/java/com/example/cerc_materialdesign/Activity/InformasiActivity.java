@@ -17,6 +17,7 @@ public class InformasiActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
     private InformasiAdapter informasiAdapter;
 
     @Override

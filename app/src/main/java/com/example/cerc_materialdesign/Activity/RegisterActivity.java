@@ -12,10 +12,11 @@ import android.widget.Toast;
 
 import com.example.cerc_materialdesign.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private TextView tv_login;
+    private MaterialTextView tv_login;
     private MaterialButton btnRegister;
 
     @Override

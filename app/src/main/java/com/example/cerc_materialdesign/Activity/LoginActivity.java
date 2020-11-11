@@ -12,12 +12,13 @@ import android.widget.Toast;
 import com.example.cerc_materialdesign.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textview.MaterialTextView;
 
 public class LoginActivity extends AppCompatActivity {
 
     private TextInputEditText etUsername, etPassword;
     private MaterialButton btnLogin;
-    private TextView tvRegister;
+    private MaterialTextView tvRegister;
 
     String username, password;
 
