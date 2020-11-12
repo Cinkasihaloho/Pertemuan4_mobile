@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         list.addAll(HeroesData.getListData());
         showRecyclerList();
         bottomNav();
+
     }
 
     @Override
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         setMode(item.getItemId());
         return super.onOptionsItemSelected(item);
     }
+
 
     public void setMode(int selectedMode) {
         switch (selectedMode) {
