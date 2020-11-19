@@ -83,27 +83,32 @@ public class MainActivity extends AppCompatActivity {
         listHeroAdapter.setOnItemClickCallback(new ListHeroAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Hero data) {
-                showSelectedHero(data);
+                Intent intent=new Intent(getApplicationContext(), DetailActivity.class);
+                intent.putExtra("nama",data.getName());
+                intent.putExtra("from",data.getFrom());
+                intent.putExtra("foto",data.getPhoto());
+                startActivity(intent);
+//                showSelectedHero(data);
             }
         });
     }
 
     private void showRecyclerGrid(){
         rvHeroes.setLayoutManager(new GridLayoutManager(this, 2));
-        GridHeroAdapter gridHeroAdapter = new GridHeroAdapter(list);
+        GridHeroAdapter gridHeroAdapter = new GridHeroAdapter(list,this);
         rvHeroes.setAdapter(gridHeroAdapter);
 
         gridHeroAdapter.setOnItemClickCallback(new ListHeroAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Hero data) {
-                showSelectedHero(data);
+//                showSelectedHero(data);
             }
         });
     }
 
     private void showRecyclerCardView(){
         rvHeroes.setLayoutManager(new LinearLayoutManager(this));
-        CardViewHeroAdapter cardViewHeroAdapter = new CardViewHeroAdapter(list);
+        CardViewHeroAdapter cardViewHeroAdapter = new CardViewHeroAdapter(list,this);
         rvHeroes.setAdapter(cardViewHeroAdapter);
     }
 

@@ -1,5 +1,7 @@
 package com.example.cerc_materialdesign.Adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.cerc_materialdesign.Activity.DetailActivity;
 import com.example.cerc_materialdesign.Model.Hero;
 import com.example.cerc_materialdesign.R;
 
@@ -19,9 +22,10 @@ import java.util.ArrayList;
 
 public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapter.CardViewViewHolder> {
     private ArrayList<Hero> listHero;
-
-    public CardViewHeroAdapter(ArrayList<Hero> list) {
+    private Context context;
+    public CardViewHeroAdapter(ArrayList<Hero> list,Context context) {
         this.listHero = list;
+        this.context=context;
     }
 
     @NonNull
@@ -34,7 +38,7 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
     @Override
     public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
 
-        Hero hero = listHero.get(position);
+        final Hero hero = listHero.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(hero.getPhoto())
                 .apply(new RequestOptions().override(350, 550))
@@ -61,6 +65,11 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(context, DetailActivity.class);
+                intent.putExtra("nama",hero.getName());
+                intent.putExtra("from",hero.getFrom());
+                intent.putExtra("foto",hero.getPhoto());
+                context.startActivity(intent);
                 Toast.makeText(holder.itemView.getContext(), "Kamu memilih " + listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -78,7 +87,7 @@ public class CardViewHeroAdapter extends RecyclerView.Adapter<CardViewHeroAdapte
         Button btnFavorite, btnShare;
         CardViewViewHolder(View itemView) {
             super(itemView);
-            imgPhoto = itemView.findViewById(R.id.img_item_photo);
+            imgPhoto = itemView.findViewById(R.id.image);
             tvName = itemView.findViewById(R.id.tv_item_name);
             tvFrom = itemView.findViewById(R.id.tv_item_from);
             btnFavorite = itemView.findViewById(R.id.btn_set_favorite);

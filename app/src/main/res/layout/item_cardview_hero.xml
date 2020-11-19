@@ -17,7 +17,7 @@
         android:layout_height="200dp"
         android:padding="8dp">
         <ImageView
-            android:id="@+id/img_item_photo"
+            android:id="@+id/image"
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:layout_marginBottom="4dp"
@@ -31,8 +31,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:layout_toEndOf="@id/img_item_photo"
-            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="@string/heroes_name" />
@@ -44,8 +44,8 @@
             android:layout_below="@id/tv_item_name"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_toEndOf="@id/img_item_photo"
-            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
             android:ellipsize="end"
             android:maxLines="5"
             tools:text="@string/description" />
@@ -56,8 +56,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_toEndOf="@id/img_item_photo"
-            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
             android:orientation="horizontal">
             <Button
                 android:id="@+id/btn_set_favorite"
