@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Intent login = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(login);
                 finish();
-                Toast.makeText(getApplicationContext(),"Registrasi Berhasil",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Let me introduce you to main Harry Potter Character",Toast.LENGTH_SHORT).show();
             }
         };
 
