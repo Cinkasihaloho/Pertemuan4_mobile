@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Nama"
+                android:text="Name"
                 android:textColor="@android:color/black"
                 android:textSize="14sp" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
                 android:gravity="end"
-                android:text="CERC 2020"
+                android:text="Cinka Sihaloho"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Nomor Ponsel"
+                android:text="Instagram"
                 android:textColor="@android:color/black"
                 android:textSize="14sp" />
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
                 android:gravity="end"
-                android:text="08123456789"
+                android:text="cinkaashl__"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
@@ -155,16 +155,16 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_width="418dp"
+        android:layout_height="77dp"
         android:layout_alignParentBottom="false"
+        android:layout_marginBottom="664dp"
         android:background="@android:color/white"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

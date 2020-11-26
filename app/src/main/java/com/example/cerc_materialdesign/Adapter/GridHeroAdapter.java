@@ -51,7 +51,7 @@ public class GridHeroAdapter extends RecyclerView.Adapter<GridHeroAdapter.GridVi
             public void onClick(View v) {
                 Intent intent=new Intent(context, DetailActivity.class);
                 intent.putExtra("nama",hero.getName());
-                intent.putExtra("from",hero.getFrom());
+                intent.putExtra("birth",hero.getFrom());
                 intent.putExtra("foto",hero.getPhoto());
                 context.startActivity(intent);
                 Toast.makeText(holder.itemView.getContext(), "Kamu memilih " + listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();

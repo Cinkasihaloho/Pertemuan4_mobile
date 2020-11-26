@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CERC-MaterialDesign</string>
+    <string name="app_name">List Harry Potter</string>
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="heroes_name" />
     <string name="description" />
@@ -9,5 +9,7 @@
     <string name="list">List</string>
     <string name="grid">Grid</string>
     <string name="with_cardview">with CardView</string>
+    <string name="beranda">Beranda</string>
+    <string name="akun">Akun</string>
 
 </resources>

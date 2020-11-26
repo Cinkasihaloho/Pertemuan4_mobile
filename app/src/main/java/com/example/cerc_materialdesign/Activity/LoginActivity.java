@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Password tidak boleh kosong.", Toast.LENGTH_SHORT).show();
             return;
         }
-        if (username.equals("admin") && password.equals("admin")) {
+        if (username.equals("cinka") && password.equals("cinka")) {
             Intent home = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(home);
             finish();

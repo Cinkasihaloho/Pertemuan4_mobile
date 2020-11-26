@@ -61,8 +61,6 @@ public class InformasiActivity extends AppCompatActivity {
     private void bottomNav() {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        // set selected home
-        bottomNavigationView.setSelectedItemId(R.id.informasi);
         // item selected listener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -73,8 +71,6 @@ public class InformasiActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                         finish();
                         overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.informasi:
                         return true;
                     //change akun
                     case R.id.akun:

@@ -76,12 +76,6 @@ public class ProfileActivity extends AppCompatActivity {
                         finish();
                         overridePendingTransition(0, 0);
                         return true;
-                    //change informasi
-                    case R.id.informasi:
-                        startActivity(new Intent(getApplicationContext(), InformasiActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-                        finish();
-                        overridePendingTransition(0, 0);
-                        return true;
                     case R.id.akun:
                         return true;
                 }

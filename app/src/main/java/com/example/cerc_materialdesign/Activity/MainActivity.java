@@ -134,12 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.beranda:
                         return true;
-                    //change infoemasi
-                    case R.id.informasi:
-                        startActivity(new Intent(getApplicationContext(), InformasiActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-                        finish();
-                        overridePendingTransition(0, 0);
-                        return true;
+
                     //change akun
                     case R.id.akun:
                         startActivity(new Intent(getApplicationContext(), ProfileActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
